@@ -1,6 +1,6 @@
-export type Root = Root2[];
+export type Posts = Post[];
 
-export interface Root2 {
+export interface Post {
   userId: number;
   id: number;
   title: string;
