@@ -15,7 +15,11 @@ import { Posts } from "~/posts";
 import { Users } from "~/users";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Final Yahoo" }, { name: "description", content: "Lemme get that final" }];
+  return [
+    { title: "Final Yahoo" },
+    { name: "description", content: "Lemme get that final" },
+    { name: "og:image", content: "https://i.ytimg.com/vi/za4gpbYCuSs/maxresdefault.jpg" },
+  ];
 };
 
 const getPosts = async (): Promise<Posts> => {
